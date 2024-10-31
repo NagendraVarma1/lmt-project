@@ -1,34 +1,37 @@
-import { useState } from 'react';
-import classes from './Login.module.css'
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import classes from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 import { IoEye } from "react-icons/io5";
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
 
-  const navigate = useNavigate()
-
-  const validateEmail = (email) => {
-    const characters = /\S+@\S+\.\S+/;
-    return characters.test(email)
-  }
+  const navigate = useNavigate();
 
   const showPasswordHandler = () => {
     setShowPassword((prevState) => {
-      return !prevState
-    })
-  }
+      return !prevState;
+    });
+  };
 
   const formHandler = (event) => {
     event.preventDefault();
 
-    if(validateEmail(email)){
-      navigate('/register')
+    if (password.length < 6) {
+      setError("Password must contain atleast 6 characters");
+      setPassword("");
     }
-  }
-  console.log(email)
+    else {
+      setEmail("");
+      setPassword("");
+
+      navigate("/register");
+    }
+  };
+  console.log(email);
   return (
     <div className={classes.mainDiv}>
       <div className={classes.wrapper}>
@@ -47,7 +50,7 @@ const Login = () => {
           </div>
           <div className={classes.inputBox}>
             <input
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               name="password"
               id="password"
               placeholder="Type your Password"
@@ -55,10 +58,11 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <IoEye className={classes.icon} onClick={showPasswordHandler}/>
+            <IoEye className={classes.icon} onClick={showPasswordHandler} />
+            {error && <p>{error}</p>}
           </div>
           <div className={classes.btn}>
-            <button type='submit'>Login</button>
+            <button type="submit">Login</button>
           </div>
         </form>
       </div>
