@@ -5,9 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../src/Assests/mainBackground.jpg');
+  /* background-image: url('../src/Assests/mainBackground.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(to bottom right, rgba(181, 231, 243, 0.77), rgb(254, 245, 245));
 }
 
 code {
