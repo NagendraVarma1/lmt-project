@@ -16,8 +16,6 @@ code {
     monospace;
 }
 .active{
-  background-color: rgba(230, 200, 200, 0.656);
-  padding: 10px;
-  border-radius: 20px;
-  color: white;
+  background-color: #E7E7E7;
+  border-radius: 5px;
 }

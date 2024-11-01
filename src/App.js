@@ -15,7 +15,7 @@ const App = () => {
       children: [
         {path: '/', element: <Login />},
         {path: '/register', element: <Register />},
-        {path: '/analysis', element: <Analysis />},
+        {path: '/analytics', element: <Analysis />},
         {path: '/about', element: <About />},
         {path: '/contact', element: <Contact />}
       ]
