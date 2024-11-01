@@ -1,13 +1,15 @@
-import Navbar from "../Navbar/Navbar"
-import classes from './Contact.module.css';
+import Navbar from "../Navbar/Navbar";
+import classes from "./Contact.module.css";
 
 const Contact = () => {
-    return (
-        <div className={classes.mainDiv}>
-            <Navbar />
-            <h1>This is Contact page</h1>
-        </div>
-    )
-}
+  return (
+    <div className={classes.mainDiv}>
+      <Navbar />
+      <div className={classes.wrapper}>
+        <h1>CONTACT US</h1>
+      </div>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
