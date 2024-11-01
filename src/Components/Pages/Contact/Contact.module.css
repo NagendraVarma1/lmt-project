@@ -4,11 +4,114 @@
     display: flex
 }
 .wrapper{
-    /* background-color: red; */
     width: 75%;
     margin-left: 2%;
 }
 
 .wrapper h1{
     font-family: "Poppins", sans-serif;
+}
+
+.wrapper form{
+    background-image: linear-gradient(to bottom right, rgba(181, 231, 243, 0.77), rgb(254, 245, 245));
+    width: 50%; 
+    border:  2px solid black;
+    border-radius: 30px;
+    margin: 80px 25%;
+    padding: 20px;
+}
+
+.inputBox{
+    margin: 50px 10%;
+    width: 80%;
+    height: 50px;
+}
+
+.inputBox label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.inputBox input{
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border-radius: 40px;
+    border: 2px solid rgb(63, 60, 60);
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+}
+.btn{
+    width: 40%;
+    margin-left: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px ;
+    margin-top: 60px;
+}
+.btn button{
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+.btn button:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper{
+        width: 70%;
+        margin-left: 2%;
+    }
+    .wrapper form{
+        background-image: linear-gradient(to bottom right, rgba(181, 231, 243, 0.77), rgb(254, 245, 245));
+        width: 70%; 
+        border:  2px solid black;
+        border-radius: 30px;
+        margin: 50px 5% 220px;
+        padding: 15px;
+    }
+    
+    .wrapper h1{
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .inputBox{
+        margin: 50px 0;
+        width: 80%;
+        height: 35px;
+    }
+    .inputBox label{
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .inputBox input{
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    .btn{
+        width: 60%;
+        margin-left: 20%;
+        height: 35px;
+    }
+    .btn button{
+        font-size: 16px;
+    }
 }

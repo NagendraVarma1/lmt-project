@@ -29,7 +29,7 @@ const Register = () => {
             setPassword('');
             setConfirmPassword('')
 
-            navigate('/home')
+            navigate('/analytics')
         }
     }
 

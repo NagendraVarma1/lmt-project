@@ -11,14 +11,19 @@ const Navbar = () => {
       <nav className={classes.navbar}>
         <ul className={classes.links}>
           <li>
-          
-            <NavLink className={classes.link} to="/analytics"><GoGraph className={classes.icon} /> ANALYTICS</NavLink>
+            <NavLink className={classes.link} to="/analytics">
+              <GoGraph className={classes.icon} /> ANALYTICS
+            </NavLink>
           </li>
           <li>
-            <NavLink className={classes.link} to="/contact"><IoMdCall className={classes.icon} /> CONTACT US</NavLink>
+            <NavLink className={classes.link} to="/contact">
+              <IoMdCall className={classes.icon} /> CONTACT US
+            </NavLink>
           </li>
           <li>
-            <NavLink className={classes.link} to="/about"><CiGlobe className={classes.icon} /> ABOUT US</NavLink>
+            <NavLink className={classes.link} to="/about">
+              <CiGlobe className={classes.icon} /> ABOUT US
+            </NavLink>
           </li>
         </ul>
       </nav>
