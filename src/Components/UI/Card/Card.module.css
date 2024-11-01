@@ -16,3 +16,40 @@
     font-weight: 700;
     letter-spacing: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .card{
+        width: 48%;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        position: relative;
+    }
+    .card div{
+        display: flex;
+        align-items: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        letter-spacing: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card{
+        width: 95%;
+        height: 100px;
+        margin-top:0px;
+        border-radius: 8px;
+        position: relative;
+    }
+    .card div{
+        display: flex;
+        align-items: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: none;
+    }
+}

@@ -82,7 +82,7 @@ const Analysis = () => {
             <h3 className={classes.count2}>71291</h3>
           </Card>
         </div>
-        <div>
+        <div className={classes.lineChartDiv}>
             <Line className={classes.lineChart} options={options} data={lineChartData}/>
         </div>
       </div>
